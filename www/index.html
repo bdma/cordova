@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>mario test</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/jquery2.1.3.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+</head>
+
+<body>
+    <audio src="asset/123.mp3" autoplay loop></audio>
+    <div class="container">
+        <img class="background" src="asset/img/background.jpg">
+
+        <img class="cloud-bg" src="asset/img/cloud-bg.png">
+        <img class="cloud-bg2" src="asset/img/cloud-bg.png">
+
+        <div class="castle-container">
+            <div class="castle">
+                <div class="brleg">
+                    <img class="brfoot" src="asset/img/brfoot.png" />
+                    <img class="brbottom" src="asset/img/brbottom.png" />
+                </div>
+                <div class="frleg">
+                    <img class="frfoot" src="asset/img/frfoot.png" />
+                    <img class="frbottom" src="asset/img/frbottom.png" />
+                </div>
+                <img class="chimney3" src="asset/img/chimney3.png" />
+                <img class="treehouse" src="asset/img/treehouse.png" />
+                <div class="houses-group">
+                    <img class="point6" src="asset/img/point6.png" />
+                    <img class="point5" src="asset/img/point5.png" />
+                    <img class="point4" src="asset/img/point4.png" />
+                    <img class="houses" src="asset/img/houses.png" />
+                </div>
+                <img class="chimney2" src="asset/img/chimney2.png" />
+                <img class="chimney1" src="asset/img/chimney1.png" />
+                <img class="wing" src="asset/img/wing.png" />
+                <div class="mound-group">
+                    <img class="antenna" src="asset/img/antenna.png" />
+                    <img class="point3" src="asset/img/point3.png" />
+                    <img class="point2" src="asset/img/point2.png" />
+                    <img class="point1" src="asset/img/point1.png" />
+                    <img class="mound" src="asset/img/mound.png" />
+                </div>
+                <img class="wind" src="asset/img/wind.png" />
+                <img class="cannon" src="asset/img/cannon.png" />
+                <img class="main" src="asset/img/main.png" />
+                <div class="blleg">
+                    <div class="blbottom-group">
+                        <img class="blfoot" src="asset/img/flfoot.png" />
+                        <img class="blbottom" src="asset/img/flbottom.png" />
+                    </div>
+                    <img class="bltop" src="asset/img/fltop.png" />
+                </div>
+                <img class="blcover" src="asset/img/blcover.png" />
+                <img class="knob" src="asset/img/knob.png" />
+                <img class="tele" src="asset/img/tele.png" />
+                <img class="telecover" src="asset/img/telecover.png" />
+                <div class="flleg">
+                    <div class="flbottom-group">
+                        <img class="flfoot" src="asset/img/flfoot.png" />
+                        <img class="flbottom" src="asset/img/flbottom.png" />
+                    </div>
+                    <img class="fltop" src="asset/img/fltop.png" />
+                </div>
+                <img class="flcover" src="asset/img/flcover.png" />
+            </div>
+        </div>
+
+        <img class="foreground" src="asset/img/foreground.png">
+
+        <div class="clouds">
+            <img class="cloud-shadow1" src="asset/img/cloud_shadow-1.png">
+            <img class="cloud-shadow2" src="asset/img/cloud_shadow-1.png">
+            <img class="cloud-shadow3" src="asset/img/cloud_shadow-1.png">
+            <img class="cloud1" src="asset/img/cloud-1.png">
+            <img class="cloud2" src="asset/img/cloud-1.png">
+            <img class="cloud3" src="asset/img/cloud-2.png">
+            <img class="cloud4" src="asset/img/cloud-1.png">
+            <img class="cloud5" src="asset/img/cloud-2.png">
+        </div>
+
+    </div>
+     <div class="control-toggle" style="opacity:0">开启鼠标控制</div> 
+    <div class="load-gate">正在载入，同学们等等啦...</div>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
