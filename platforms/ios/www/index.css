@@ -1,6 +1,6 @@
 html, body { height: 100vh;width: 100vw; margin: 0; background: #2294b3; overflow: hidden; }
 
-.container {padding-top: 62.5%; position: absolute; width: 100%; bottom: 0; left: 0; }
+.container {height: 80vh; width: 100%; overflow: hidden; position: absolute; bottom: 0; left: 0; }
 .container.active { cursor: ew-resize; }
 
 img,
@@ -57,7 +57,7 @@ img,
 .flcover { left: 244px; top: 567px; }
 
 .foreground { position: absolute; bottom: 0; left: 0; width: 100%; }
-.background { position: absolute; bottom: 25.5%; left: 0; width: 100%; }
+.background { position: absolute; bottom: 12%; left: 0; width: 100%; }
 
 .cloud-bg { bottom: 17%; width: 80%; right: 100%;}
 .cloud-bg2 { bottom: 17%; width: 80%; right: 100%; }
